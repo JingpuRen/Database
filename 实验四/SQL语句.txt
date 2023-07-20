@@ -1,0 +1,111 @@
+-- 创建名称为 showStu 的存储过程，存储过程的作用是从学生表（Student）中查询学生信息
+DELIMITER //
+CREATE PROCEDURE showStu()
+BEGIN
+    SELECT * FROM Student;
+END //
+DELIMITER ;
+
+-- 查看showStu的存储过程的状态信息
+SHOW CREATE PROCEDURE showStu;
+
+-- 查看showStu存储过程的定义
+SHOW CREATE PROCEDURE showStu;
+
+-- 创建名称为getAge的存储过程，输入参数是学生姓名,存储过程的作用是通过输入的学生姓名返回该学生的年龄
+DELIMITER //
+CREATE PROCEDURE getAge(IN stuName VARCHAR(50))
+BEGIN
+    SELECT TIMESTAMPDIFF(YEAR, Sbirth, CURDATE()) AS age FROM Student WHERE Sname = stuName;
+END //
+DELIMITER ;
+CALL getAge('李春刚'); -- 示例
+
+-- 创建名称为getCourse的存储过程，输入参数是学生学号，存储过程的作用是通过输入的学生姓名返回该学生所选的课程
+DELIMITER //
+CREATE PROCEDURE getCourse(IN Sxh CHAR(20))
+BEGIN
+	SELECT Course.Cname
+	FROM Course,Grade
+	WHERE Grade.Sno = Sxh AND Grade.Cno = Course.Cno;
+END //
+DELIMITER ;
+CALL getCourse('001'); -- 示例
+
+-- 创建名称为 getScoreByStu 的存储过程，输入参数是学生姓名和课程名称。存储过程的作用是通过输入的学生姓名和课程名称从学生成绩信息表中查询指定学生的成绩
+DELIMITER //
+CREATE PROCEDURE getScoreByStu(IN Sxm CHAR(20),IN Ckcmc CHAR(20))
+BEGIN
+	SELECT Grade.Grades
+	FROM Student,Grade,Course
+	WHERE Student.Sname = Sxm AND Student.Sno = Grade.Sno AND Grade.Cno = Course.Cno AND Course.Cname = Ckcmc;
+END //
+DELIMITER ;
+CALL getScoreByStu('李春刚','电子商务');
+
+DELIMITER //
+CREATE PROCEDURE getScoreState(IN Sxm CHAR(20),IN Ckcmc CHAR(20))
+BEGIN
+	DECLARE score INT;
+	SELECT Grades INTO score
+	FROM Student,Course,Grade
+	WHERE Student.Sno = Grade.Sno AND Grade.Cno = Course.Cno AND Student.Sname = Sxm AND Course.Cname = Ckcmc;
+	
+	IF score < 60 THEN 
+		SELECT '不合格' AS state;
+	ELSEIF score >= 60 AND score <= 80 THEN 
+		SELECT '合格' AS state;
+	ELSE
+		SELECT '优秀' AS state;
+	END IF;
+END //
+DELIMITER ;
+
+-- 调用getScoreByStu的存储过程。输入学生姓名和课程名称，查看返回结果
+CALL getScoreByStu('李春刚','数据库原理');
+
+-- 删除名称为showStu 的存储过程
+DROP PROCEDURE IF EXISTS showStu;
+
+DELIMITER //
+CREATE TRIGGER unInsert BEFORE INSERT ON Student
+FOR EACH ROW
+BEGIN
+	IF new.Sdept = '计算机' THEN
+	SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = '此系人数已满，不能添加人员';
+	END IF;
+END //
+DELIMITER ;
+
+DELIMITER //
+CREATE TRIGGER insCourse AFTER INSERT ON Student
+FOR EACH ROW
+BEGIN
+	INSERT INTO Grade (Sno,Cno,Grades) VALUES (new.Sno,'05',NULL);
+END //
+DELIMITER ;
+
+SHOW CREATE TRIGGER unInsert;
+
+DROP TRIGGER IF EXISTS unInsert;
+
+INSERT INTO Student(Sno,Sname,Ssex,Smajor,Sdept,Srxsj,Sclass,Snumber,Sbirth,Sregion,Schange,Snation,Smonitor,Szzmm,Szxf) VALUES('031','任精普','男','计算机应用','计算机','2019-09-01','01',NULL,'2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- 6/10日新增
+CALL showStu();
+
+SHOW PROCEDURE STATUS LIKE 'showStu';
+
+SHOW TRIGGERS WHERE `Table` = 'Student' AND `Trigger` = 'unInsert';

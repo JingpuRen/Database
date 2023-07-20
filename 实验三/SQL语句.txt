@@ -1,0 +1,92 @@
+-- 创建用户Jim，登录密码为‘123456’
+CREATE USER 'jim'@'localhost' IDENTIFIED BY '123456';
+
+-- 将用户jim的名称修改为你自己的名字
+rename user 'jim'@'localhost' to 'Renjingpu'@'localhost';
+
+-- 将这个用户的密码自定义修改
+ALTER USER 'Renjingpu'@'localhost' IDENTIFIED BY '666666';
+
+-- 授予用户对之前实验的xskc数据库Student表的所有操作权限及查询操作权限
+GRANT ALL PRIVILEGES ON xskc.Student TO 'Renjingpu'@'localhost';
+
+-- 授予用户对Course表进行插入，删除，查询操作权限
+GRANT INSERT, DELETE, SELECT ON xskc.Course TO 'Renjingpu'@'localhost';
+
+-- 授予用户在Grade表上的SELECT权限，并允许其将该权限授予其他用户
+GRANT SELECT ON xskc.grade TO 'Renjingpu'@'localhost' WITH GRANT OPTION;
+
+-- 授予用户对数据库xskc的所有权限
+GRANT ALL PRIVILEGES ON xskc.* TO 'Renjingpu'@'localhost';
+
+-- 回收Grade表上的insert权限
+REVOKE INSERT ON xskc.Grade FROM 'Renjingpu'@'localhost';
+
+-- 授予用户所有的权限
+GRANT ALL PRIVILEGES ON *.* TO 'Renjingpu'@'localhost';
+
+-- 取消用户所有的权限
+REVOKE ALL PRIVILEGES ON *.* FROM 'Renjingpu'@'localhost';
+
+-- 删除此用户
+DROP USER 'Renjingpu'@'localhost';
+
+-- 创建xskc上的视图student_view，视图包含学号、姓名、系别
+CREATE VIEW student_view AS
+SELECT Sno, Sname, Sdept
+FROM xskc.Student;
+
+-- 创建xskc数据库上的视图course_view，视图包含Course表的全部列
+CREATE VIEW course_view AS
+SELECT *
+FROM xskc.Course;
+
+-- 从视图student_view中查看姓“陈”且名字长度为三个字的学生的全部信息
+SELECT *
+FROM xskc.student_view
+WHERE Sname LIKE '陈__';
+
+-- 从视图course_view中查看“白一阁”老师教的所有课程信息
+SELECT *
+FROM xskc.course_view
+WHERE Cteacher='白一阁';
+
+-- 向视图student_view中插入一行数据(50,‘机械熊’,‘电子系’)
+INSERT INTO xskc.student_view(Sno,Sname,Sdept) VALUES('50','机械熊','电子系');
+
+-- 删除视图中刚刚添加的那条数据
+DELETE FROM xskc.student_view WHERE Sname = '机械熊';
+
+-- 删除视图course_view
+DROP VIEW xskc.course_view;
+
+-- 创建角色role1
+CREATE ROLE 'role1';
+
+-- 给角色赋予Student表的SELECT、UPDATE、INSERT权限
+GRANT SELECT, UPDATE, INSERT ON xskc.Student TO 'role1';
+
+-- 查看角色的权限
+SHOW GRANTS FOR 'role1';
+
+-- 回收角色的UPDATE权限
+REVOKE UPDATE ON xskc.Student FROM 'role1';
+
+-- 创建用户jim，登录密码为‘123456’
+CREATE USER 'jim'@'localhost' IDENTIFIED BY '123456';
+
+-- 给用户授予这个角色并激活
+GRANT 'role1' TO 'jim'@'localhost';
+SET DEFAULT ROLE 'role1' TO 'jim'@'localhost';
+
+-- 撤销用户的角色
+REVOKE 'role1' FROM 'jim'@'localhost';
+
+-- 删除该角色
+DROP ROLE 'role1';
+
+
+
+
+-- 6/10更新
+UPDATE USER SET USER='Renjingpu' WHERE USER='jim';

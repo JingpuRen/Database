@@ -1,0 +1,274 @@
+-- 学生表插入30条语数据
+INSERT INTO Student VALUES('001','李春刚','男','计算机应用','计算机','2019-09-01','02','12345678910','2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('002','董雪婷','女','计算机应用','计算机','2019-09-01','03','12345678910','2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('003','陈男','男','电子商务','管理系','2019-09-01','01','12345678910','2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('004','刘波','男','电子商务','管理系','2019-09-01','02','12345678910','2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('005','吴辉','男','计算机应用','计算机','2019-09-01','03','12345678910','2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('006','陈惠惠','女','软件开发','软件','2019-09-01','02','12345678910','2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('007','陈慧','女','软件开发','软件','2019-09-01','01','12345678910','2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('008','王涛','男','计算机应用','计算机','2019-09-01','03','12345678910','2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('009','郭凤丽','女','应用电子','电子','2019-09-01','01','12345678910','2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('010','贾慧','女','应用电子','电子','2019-09-01','03','12345678910','2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('011','陈小琴','女','计算机应用','计算机','2019-09-01','03','12345678910','2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('012','钟志','男','计算机应用','计算机','2019-09-01','02','12345678910','2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('013','彭志勇','男','计算机应用','计算机','2019-09-01','02','12345678910','2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('014','熊小胖','男','计算机应用','计算机','2019-09-01','02','12345678910','2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('015','魏泽丽','女','计算机应用','计算机','2019-09-01','01',(Null),'2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('016', '刀妹', '女', '计算机应用','计算机','2019-09-01','02',(Null),'2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('017', '陈雪', '女', '计算机应用','计算机','2019-09-01','02',12345678910,'2001-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('018', '陈艾克', '男', '计算机应用','计算机','2019-09-01','01',(Null),'2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('019', '卡萨丁', '男', '计算机应用','计算机','2019-09-01','03',(Null),'2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('020', '莫甘娜', '女', '计算机应用','计算机','2019-09-01','01',(Null),'2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('021', '基兰', '女', '计算机应用','计算机','2019-09-01','02',(Null),'2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('022', '寒冰', '女', '计算机应用','计算机','2019-09-01','02',(Null),'2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('023', '塔姆', '男', '计算机应用','计算机','2019-09-01','02',(Null),'2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('024', '蛮王', '男', '计算机应用','计算机','2019-09-01','02',(Null),'2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('025', '寡妇', '女', '计算机应用','计算机','2019-09-01','02',(Null),'2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('026', '炸弹人', '男', '计算机应用','计算机','2019-09-01','01',(Null),'2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('027', '维克多', '男', '计算机应用','计算机','2019-09-01','02',(Null),'2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('028', '狐狸', '女', '计算机应用','计算机','2019-09-01','02',(Null),'2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('029', '蕾欧娜', '女', '计算机应用','计算机','2019-09-01','01',(Null),'2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+INSERT INTO Student VALUES('030', '卡莎', '女', '计算机应用','计算机','2019-09-01','01',(Null),'2000-09-01','呼和浩特市','无','汉族','shen','团员',132);
+
+-- 课程表插入10条数据
+INSERT INTO Course VALUES('01','计算机基础','王晓梅','101',4,60,1);
+INSERT INTO Course VALUES('02','电子商务','李丽','102',6,80,2);
+INSERT INTO Course VALUES('03','网页制作','张铁柱','103',6,NULL,NULL);
+INSERT INTO Course VALUES('04','软件工程','付大鹏','104',4,NULL,4);
+INSERT INTO Course VALUES('05','数据库原理','白一阁','105',6,90,3);
+INSERT INTO Course VALUES('06','软件测试','白展堂','201',4,NULL,5);
+INSERT INTO Course VALUES('07','安卓应用设计','魏小雨','201',2,NULL,4);
+INSERT INTO Course VALUES('08','UML','陈乾','201',5,70,6);
+INSERT INTO Course VALUES('09','编译原理','熊军','207',5,NULL,7);
+INSERT INTO Course VALUES('10','计算机网络','白一阁','207',4,60,4);
+
+-- 成绩表插入90条数据
+INSERT INTO grade VALUES("001", "05", 82, NULL);
+INSERT INTO grade VALUES("011", "05", 96, NULL);
+INSERT INTO grade VALUES("003", "05", 97, NULL);
+INSERT INTO grade VALUES("004", "05", 65, NULL);
+INSERT INTO grade VALUES("017", "05", 76, NULL);
+INSERT INTO grade VALUES("017", "01", 86, NULL);
+INSERT INTO grade VALUES("017", "02", 96, NULL);
+INSERT INTO grade VALUES("017", "03", 88, NULL);
+INSERT INTO grade VALUES("017", "04", 89, NULL);
+INSERT INTO grade VALUES("017", "06", 92, NULL);
+INSERT INTO grade VALUES("017", "07", 90, NULL);
+INSERT INTO grade VALUES("017", "08", 75, NULL);
+INSERT INTO grade VALUES("017", "09", 84, NULL);
+INSERT INTO grade VALUES("017", "10", 83, NULL);
+INSERT INTO grade VALUES("012", "01", 86, NULL);
+INSERT INTO grade VALUES("012", "02", 96, NULL);
+INSERT INTO grade VALUES("012", "03", 88, NULL);
+INSERT INTO grade VALUES("012", "04", 89, NULL);
+INSERT INTO grade VALUES("012", "05", 89, NULL);
+INSERT INTO grade VALUES("012", "06", 92, NULL);
+INSERT INTO grade VALUES("012", "07", 90, NULL);
+INSERT INTO grade VALUES("012", "08", 88, NULL);
+INSERT INTO grade VALUES("012", "09", 84, NULL);
+INSERT INTO grade VALUES("012", "10", 83, NULL);
+INSERT INTO grade VALUES("007", "01", 52, NULL);
+INSERT INTO grade VALUES("007", "02", 52, NULL);
+INSERT INTO grade VALUES("007", "03", 52, NULL);
+INSERT INTO grade VALUES("007", "04", 52, NULL);
+INSERT INTO grade VALUES("007", "05", 53, NULL);
+INSERT INTO grade VALUES("007", "06", 59, NULL);
+INSERT INTO grade VALUES("007", "07", 56, NULL);
+INSERT INTO grade VALUES("007", "08", 52, NULL);
+INSERT INTO grade VALUES("007", "09", 52, NULL);
+INSERT INTO grade VALUES("007", "10", 52, NULL);
+INSERT INTO grade VALUES("014", "05", 52, NULL);
+INSERT INTO grade VALUES("014", "06", 59, NULL);
+INSERT INTO grade VALUES("014", "07", 58, NULL);
+INSERT INTO grade VALUES("014", "08", 59, NULL);
+INSERT INTO grade VALUES("030", "05", 52, NULL);
+INSERT INTO grade VALUES("030", "06", 59, NULL);
+INSERT INTO grade VALUES("030", "07", 58, NULL);
+INSERT INTO grade VALUES("002", "01", 88, NULL);
+INSERT INTO grade VALUES("002", "02", 78, NULL);
+INSERT INTO grade VALUES("002", "03", 92, NULL);
+INSERT INTO grade VALUES("002", "04", 96, NULL);
+INSERT INTO grade VALUES("002", "05", 83, NULL);
+INSERT INTO grade VALUES("002", "06", 91, NULL);
+INSERT INTO grade VALUES("002", "07", 70, NULL);
+INSERT INTO grade VALUES("002", "08", 68, NULL);
+INSERT INTO grade VALUES("002", "09", 58, NULL);
+INSERT INTO grade VALUES("002", "10", 88, NULL);
+INSERT INTO grade VALUES("001", "02", 58, NULL);
+INSERT INTO grade VALUES("001", "03", 68, NULL);
+INSERT INTO grade VALUES("001", "08", 78, NULL);
+INSERT INTO grade VALUES("004", "10", 88, NULL);
+INSERT INTO grade VALUES("004", "09", 88, NULL);
+INSERT INTO grade VALUES("004", "08", 88, NULL);
+INSERT INTO grade VALUES("006", "09", 88, NULL);
+INSERT INTO grade VALUES("006", "10", 88, NULL);
+INSERT INTO grade VALUES("006", "05", 88, NULL);
+INSERT INTO grade VALUES("006", "04", 88, NULL);
+INSERT INTO grade VALUES("005", "07", 83, NULL);
+INSERT INTO grade VALUES("005", "08", 98, NULL);
+INSERT INTO grade VALUES("005", "09", 86, NULL);
+INSERT INTO grade VALUES("005", "05", 59, NULL);
+INSERT INTO grade VALUES("005", "02", 88, NULL);
+INSERT INTO grade VALUES("005", "10", 88, NULL);
+INSERT INTO grade VALUES("008", "04", 83, NULL);
+INSERT INTO grade VALUES("008", "05", 79, NULL);
+INSERT INTO grade VALUES("008", "10", 66, NULL);
+INSERT INTO grade VALUES("009", "01", 66, NULL);
+INSERT INTO grade VALUES("009", "03", 86, NULL);
+INSERT INTO grade VALUES("009", "06", 96, NULL);
+INSERT INTO grade VALUES("009", "08", 86, NULL);
+INSERT INTO grade VALUES("009", "10", 86, NULL);
+INSERT INTO grade VALUES("010", "10", 66, NULL);
+INSERT INTO grade VALUES("010", "05", 79, NULL);
+INSERT INTO grade VALUES("010", "06", 89, NULL);
+INSERT INTO grade VALUES("010", "07", 80, NULL);
+INSERT INTO grade VALUES("010", "09", 75, NULL);
+INSERT INTO grade VALUES("013", "02", 75, NULL);
+INSERT INTO grade VALUES("013", "04", 85, NULL);
+INSERT INTO grade VALUES("013", "05", 55, NULL);
+INSERT INTO grade VALUES("013", "06", 65, NULL);
+INSERT INTO grade VALUES("013", "08", 75, NULL);
+INSERT INTO grade VALUES("013", "09", 95, NULL);
+INSERT INTO grade VALUES("015", "05", 75, NULL);
+INSERT INTO grade VALUES("015", "10", 75, NULL);
+INSERT INTO grade VALUES("015", "09", 75, NULL);
+INSERT INTO grade VALUES("015", "03", 75, NULL);
+
+-- 求选修了“数据库原理”课程的学生姓名
+SELECT Student.Sname
+FROM Student,Grade
+WHERE Student.Sno = Grade.Sno AND Grade.Cno = '05';
+
+-- 查询“陈雪”所选修的课程的课程号，课程名称以及成绩
+SELECT Course.Cno,Course.Cname,Grade.Grades
+FROM Student,Course,Grade
+WHERE Student.Sno = Grade.Sno AND Grade.Cno = Course.Cno AND Student.Sname = '陈雪';
+
+-- 查询参与了所有课程选修的学生学号、姓名和学生所在的系别
+select Sno,Sname,Sdept
+from Student
+where Sno in (
+	select Sno
+	from Grade
+	Group by Sno
+	having count(Grades) = (
+		select count(Cno)
+		from Course
+	)
+)
+
+-- 查询没有选修任何一个课程的学生学号、姓名和所在系别
+SELECT Sno,Sname,Sdept
+FROM Student
+WHERE Sno NOT IN(
+	SELECT DISTINCT(Sno)
+	FROM Grade
+)
+
+-- 查询课程没有学生选修的课程号、课程名称
+select Cno,Cname
+from Course
+where Cno not in(
+	select distinct(Cno)
+	from Grade
+)
+
+
+-- 列出每门课程的平均分、最高分、最低分
+SELECT Cno,AVG(grades) AS average,MAX(grades) AS highest,MIN(grades) AS lowest
+FROM Grade
+GROUP BY Cno
+
+-- 对所有学生求出所选修课程的最高分、平均分
+SELECT Sno,MAX(grades) AS high,AVG(grades) AS average
+FROM Grade
+GROUP BY Sno
+
+-- 对“付大鹏”老师的授课的课程的分数增加1分
+UPDATE Grade
+SET Grades = Grades + 1
+WHERE Cno IN (
+	SELECT Cno
+	FROM Course
+	WHERE Cteacher = '付大鹏'
+)
+
+-- 查询姓“陈”的且全名为两个字的学生的学号、姓名和系别
+SELECT Sno,Sname,Sdept
+FROM Student
+WHERE Sname LIKE '陈_'
+
+-- 查询没有选修“数据库原理”课程编号的学生的学号、姓名和系别
+SELECT Sno,Sname,Sdept
+FROM Student
+WHERE Sno NOT IN(
+	SELECT Sno
+	FROM Grade
+	WHERE Grade.Cno = '05'
+)
+
+-- 查询“数据库原理”课程在80分以上的学生的学号和姓名以及分数
+SELECT Student.Sno,Student.Sname,Grade.Grades
+FROM Student,Grade
+WHERE Student.Sno = Grade.Sno AND Grade.Cno = '05' AND Grade.grades > 80
+
+-- 统计各门课程的平均分、最高分、最低分，结果集按平均分降序排列
+SELECT Cno,AVG(Grades) AS average,MAX(Grades) AS highest,MIN(Grades) AS lowest
+FROM Grade
+GROUP BY Cno
+ORDER BY average DESC
+
+-- 查询有三门以上的不及格的学生，列出学号、姓名和不及格的门数
+SELECT Student.Sno,Student.Sname,COUNT(*) AS failcount
+FROM(
+	SELECT Sno,Cno,Grades
+	FROM Grade
+	WHERE Grades < 60
+) AS failcount
+JOIN Student ON failcount.Sno = Student.Sno
+GROUP BY Student.Sno
+HAVING COUNT(*) > 3
+
+-- 查询选修了“数据库原理”且成绩比此门课程的平均分要高的学生的学号、姓名和成绩
+SELECT Student.Sno,Student.Sname,Grade.Grades
+FROM Student,Grade
+WHERE Student.Sno = Grade.Sno AND Grade.Cno = '05' AND Grade.Grades > (
+	SELECT AVG(grades)
+	FROM Grade
+	WHERE Grade.Cno = '05'
+)
+
+-- 列出选修了“数据库原理”课程编号的成绩在前三名的学生的学号、姓名、成绩。（如果第三名有多个学生都列出）
+SELECT Student.Sno,Student.Sname,Grade.Grades
+FROM Student,Grade
+WHERE Student.Sno = Grade.Sno AND Grade.Cno = '05'
+ORDER BY Grade.Grades DESC
+LIMIT 3
+
+-- 查询出所有课程中60分以下的同学相关信息
+SELECT *
+FROM Student
+WHERE Student.Sno IN(
+	SELECT Grade.Sno
+	FROM Grade
+	WHERE Grade.Grades < 60
+)
+
+-- 查询选修了“白一阁”老师的所有课程的学生学号、姓名和所在系别
+SELECT Student.Sno, Student.Sname, Student.Sdept
+FROM Student
+JOIN Grade ON Student.Sno = Grade.Sno
+JOIN Course ON Grade.Cno = Course.Cno
+WHERE Course.Cteacher = '白一阁'
+GROUP BY Student.Sno, Student.Sname, Student.Sdept
+HAVING COUNT(DISTINCT Course.Cno) = (
+    SELECT COUNT(*)
+    FROM Course
+    WHERE Course.Cteacher = '白一阁'
+); -- 7
+
+-- 查询全体学生的学号、姓名、性别和年龄
+SELECT Sno, Sname, Ssex, TIMESTAMPDIFF(YEAR, Sbirth, CURDATE()) as age
+FROM Student; -- 11
+
+
